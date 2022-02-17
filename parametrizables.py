@@ -13,12 +13,7 @@ def elipse():
     frameletras = RDK.Item("FrameLetras",ITEM_TYPE_FRAME) 
     robot.setPoseFrame(frameletras)
     Ref1 = RDK.Item("Letras",ITEM_TYPE_TARGET) 
-    RefTar = Ref1.Pose() 
-    b1 = rob.pose_2_xyzrpw(RefTar)     
-    t = -pi/2     
-    x0= b1[0]     
-    y0= b1[1]     
-    z0= b1[2]     
+    RefTar = Ref1.Pose()    
     a=20     
     b=10 
     RDK.RunProgram('WeldOn(-1)')     
@@ -27,9 +22,9 @@ def elipse():
     while (t <=3*pi/2):         
         pos = RefTar*transl(a*cos(t),b*sin(t), 0)*roty(pi)
         robot.MoveJ(pos)    
-        if (t==-pi/2):       
-            sleep(2) 
-            RDK.RunProgram('WeldOn')        
+        if (t==-pi/2):
+            RDK.RunProgram('WeldOn')          
+            sleep(2)      
         t +=pi/360 
  
 elipse() 
