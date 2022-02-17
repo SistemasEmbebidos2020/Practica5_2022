@@ -7,8 +7,7 @@ rob = robodk
 robot = RDK.ItemUserPick('',ITEM_TYPE_ROBOT)    #adquirir todos los parámetros d el robot 
 if not robot.Valid(): 
     quit() 
-reference = robot.Parent()  # devuelve el artículo robot.setPoseFrame(reference)#establece el marco de referencia de un robot pose_ref=robot.Pose()  #devuelve la posición actual del robot con matriz  
-robot.setPoseFrame(reference)#establece el marco de referencia de un robot 
+
 
 def elipse(): 
     frameletras = RDK.Item("FrameLetras",ITEM_TYPE_FRAME) 
