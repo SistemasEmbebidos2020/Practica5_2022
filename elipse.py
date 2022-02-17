@@ -11,7 +11,7 @@ reference = robot.Parent()  # devuelve el artículo robot.setPoseFrame(reference
 robot.setPoseFrame(reference)
 
 def elipse(): 
-    Ref1 = RDK.Item("Letras",ITEM_TYPE_TARGET) 
+    Ref1 = RDK.Item("Letras") 
     RefTar = Ref1.Pose() 
     b1 = rob.pose_2_xyzrpw(RefTar)     
     t = -pi/2     
@@ -26,9 +26,9 @@ def elipse():
     while (t <=3*pi/2):         
         pos = transl(x0 + a*cos(t), y0 + b*sin(t), z0)*roty(-pi)         
         robot.MoveJ(pos)    
-        if (t==-pi/2):       
+        if (t==-pi/2):
+            RDK.RunProgram('WeldOn')               
             sleep(2) 
-            RDK.RunProgram('WeldOn')        
         t +=pi/360 
  
 elipse() 
