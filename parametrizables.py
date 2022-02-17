@@ -9,9 +9,9 @@ if not robot.Valid():
 
 
 def elipse(): 
-    frameletras = RDK.Item("FrameLetras",ITEM_TYPE_FRAME) 
+    frameletras = RDK.Item("FrameLetras") 
     robot.setPoseFrame(frameletras)
-    Ref1 = RDK.Item("Letras",ITEM_TYPE_TARGET) 
+    Ref1 = RDK.Item("Letras") 
     RefTar = Ref1.Pose()    
     a=20     
     b=10 
