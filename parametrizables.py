@@ -2,7 +2,6 @@ from robolink import *    # RoboDK API
 from robodk import *      # Robot toolbox 
 from time import*
 RDK = Robolink() 
-rob = robodk 
  
 robot = RDK.ItemUserPick('',ITEM_TYPE_ROBOT)    #adquirir todos los parámetros d el robot 
 if not robot.Valid(): 
