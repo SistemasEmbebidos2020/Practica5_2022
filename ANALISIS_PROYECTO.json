@@ -1,0 +1,11 @@
+{
+  "fecha": "2026-02-05T11:02:28.646259",
+  "tipo_proyecto": "Embebido General",
+  "total_archivos": 5,
+  "hardware": [],
+  "librerias": [
+    "*",
+    "sleep"
+  ],
+  "pines": {}
+}
