@@ -1,5 +1,3 @@
-Aquí está el código mejorado con comentarios profesionales y claros, mejor formato y estructura:
-```
 # Importar bibliotecas necesarias
 from robodk.robolink import *  # API de RoboDK
 from robodk.robomath import *
@@ -69,5 +67,3 @@ xyz = box_calc(xyzsize, xyzpallet)
 
 # Configurar las partes en el paletizado
 parts_setup(xyz, xyzsize)
-```
-Espero que esto sea lo que estabas buscando.
